@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('service.webp');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    animation: move-background 100s infinite;
+}
+
+@keyframes move-background {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+header {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+    position: relative
+}
+#top-left-icon {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 206px;
+} 
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #e40000;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #e40000;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    background-color: #e40000;
+     padding: 10px;
+     border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, p {
+    color: #ffffff;
+  }
+
+#contacts p {
+    background-color: #e40000;
+     padding: 10px;
+     margin-bottom: 0;
+     border: 5px solid #ddd;
+}
+.services, .references {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.services div, .references div {
+    padding: 20px;
+    background: #e40000;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
